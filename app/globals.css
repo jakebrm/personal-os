@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  /* Neutral ink scale — dark-first */
+  --color-ink-0: oklch(10% 0 0);     /* page background */
+  --color-ink-1: oklch(16% 0 0);     /* surface / card */
+  --color-ink-2: oklch(30% 0 0);     /* borders, dividers */
+  --color-ink-3: oklch(62% 0 0);     /* muted / placeholder */
+  --color-ink-4: oklch(95% 0 0);     /* primary text */
+
+  /* Accent — gold, matching the dashboard's --accent */
+  --color-accent: oklch(78% 0.09 75);
+
+  /* Semantic */
+  --color-ok:     oklch(65% 0.18 145);
+  --color-warn:   oklch(75% 0.16 85);
+  --color-danger: oklch(60% 0.22 25);
+
+  /* Font stacks — Space Grotesk + Space Mono, the app's only two fonts */
+  --font-sans: var(--font-app-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-app-mono), ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: dark;
+  background-color: var(--color-ink-0);
+  color: var(--color-ink-4);
+}
+
+body {
+  font-family: var(--font-sans);
+}

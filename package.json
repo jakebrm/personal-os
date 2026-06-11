@@ -1,0 +1,44 @@
+{
+  "name": "personal-os",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "sync:vault": "ts-node --project scripts/tsconfig.json scripts/sync-vault.ts",
+    "sync:contacts": "ts-node --project scripts/tsconfig.json scripts/sync-contacts.ts",
+    "sync:comms": "ts-node --project scripts/tsconfig.json scripts/sync-comms.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.81",
+    "@ai-sdk/react": "^3.0.200",
+    "@anthropic-ai/sdk": "^0.100.1",
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@supabase/supabase-js": "^2.106.2",
+    "ai": "^6.0.198",
+    "ical.js": "^2.2.1",
+    "monarchmoney": "^1.1.3",
+    "next": "16.2.6",
+    "openai": "^6.39.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1",
+    "sharp": "^0.34.5",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "playwright-core": "^1.60.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
